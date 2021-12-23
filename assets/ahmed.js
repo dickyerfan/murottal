@@ -3,7 +3,7 @@ $.getJSON('https://quran-endpoint.vercel.app/quran', function(data){
     $.each(menu, function(i, data){
         $('#daftar_menu').append(`
         <div class="col-md-6 col-lg-4 mb-1">
-            <li class="card card ps-4 fs-3 shadow">
+            <li class="nama_surat2 card card ps-4 fs-3 shadow">
             ${data.number}. ${data.asma.id.short}
                 <audio controls>
                     <source src="${data.recitation.full}" type="audio/mpeg">
